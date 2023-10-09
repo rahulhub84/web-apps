@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/bootstrap.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/jquery-3.7.1.js"></script>
+  <script src="https://kit.fontawesome.com/c8547d6f07.js" crossorigin="anonymous"></script>
+  <title>Home Page</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #0d99ff">
+      <div class="container">
+        <a class="navbar-brand text-light" href="#" id="logo">PracticeGO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToCollapse">
+          <ul class="navbar-nav m-auto mb-1 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#feature-section">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-section">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1" data-bs-toggle="modal" data-bs-target="#login-form">Log
+                in</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1" data-bs-toggle="modal" data-bs-target="#sign-up-form">Sign up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Login Section Form -->
+  <div class="modal fade" id="login-form" tabindex="-1" aria-labelledby="login-form" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h5 class="modal-title m-auto text-primary">Login</h5>
+        </div>
+        <div class="modal-body ">
+      <form action="#" class="form-group">
+        <div class="form-group">
+          <label for="" class="form-control-label">Username</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="" class="form-control-label">Password</label>
+          <input type="password" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <input type="checkbox" >
+          <label for="">Remember me
+          </label>
+        </div>
+
+      </form>
+
+        </div>
+        <div class="modal-footer justify-content-center ">
+          <button type="submit" class="btn btn-success text-white">Login</button>
+          <button type="button" class="btn btn-danger text-white" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Sign Up Section Form -->
+  <div class="modal fade" id="sign-up-form" tabindex="-1" aria-labelledby="sign-up-form" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h5 class="modal-title m-auto text-primary" >Aspirant Registration</h5>
+        </div>
+        <div class="modal-body ">
+
+          <!-- Actual Form -->
+           <div class="row">
+            <div class="col">
+
+              <div class="form-group">
+                <label for="user-first-name" class="form-control-label">First name</label>
+                <input type="text" name="firstname" id="user-first-name" class="form-control">
+              </div>
+
+              <div class="form-group mb-2">
+                <label for="user-last-name" class="form-control-label">Last name</label>
+                <input type="text" name="surename" id="user-last-name" class="form-control">
+              </div>
+
+              <div class="form-group mb-2">
+                <label for="dob" class="form-control-label">Date of Birth</label>
+                <input type="date" name="dob" id="dob" class="form-control" >
+              </div>
+
+              <div class="form-group">
+                <label for="phone-number" class="form-control-label">Mobile number</label>
+                <input type="tel" name="mobileno" id="phone-number" class="form-control" >
+              </div>
+
+              <div class="form-group mb-2">
+                <label for="email" class="form-control-label">Email id</label>
+                <input type="email" name="email" id="email" class="form-control" required>
+              </div>
+
+              <div class="form-group mb-2">
+                <label for="password" class="form-control-label">Create Password</label>
+                <input type="password" name="password" id="password" class="form-control" required>
+              </div>
+              <div class="form-group mb-2">
+                <label for="Confirm-password" class="form-control-label">Confirm Password</label>
+                <input type="password" name="confirm-password" id="Confirm-password" class="form-control" required>
+              </div>
+
+              <div class="form-group d-flex mb-2">
+                <label for="#">Gender: </label>
+
+                <div class="form-check">
+                  <input type="radio" name="gender" id="male" value="Male" class="form-control-check">
+                  <label for="male" class="form-chek-label">Male</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" name="gender" id="female" value="Female" class="form-control-check">
+                  <label for="male" class="form-chek-label">Female</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" name="gender" id="other" value="Transgender" class="form-control-check">
+                  <label for="male" class="form-chek-label">Transgender</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" name="privacy-policy" id="terms" class="form-control-check">
+                <label for="terms" class="form-chek-label">I agree the terms and conditions for the registration.</label>
+              </div>
+
+            </div>
+           </div>
+
+
+        </div>
+        <div class="modal-footer justify-content-center ">
+          <button type="submit" class="btn btn-success text-white">Submit</button>
+          <button type="button" class="btn btn-danger text-white" data-bs-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carousel Section   -->
+  <section id="banner-section">
+    <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" class="active owl-dot" data-bs-slide-to="0" data-bs-target="#carouselExample"></button>
+        <button type="button" class="owl-dot" data-bs-slide-to="1" data-bs-target="#carouselExample"></button>
+        <button type="button" class="owl-dot" data-bs-slide-to="2" data-bs-target="#carouselExample"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="images/slide-1.jpg" class="d-block w-100" alt="slide-1" />
+          <div class="carousel-caption d-block">
+            <h5>Sanghai Tower</h5>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
+              laborum ipsum necessitatibus doloremque maxime ex sit quidem
+              molestias veritatis? Dignissimos!
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="images/slide-2.jpg" class="d-block w-100" alt="slide-2" />
+          <div class="carousel-caption d-block">
+            <h5>Mysterious Mountain</h5>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
+              laborum ipsum necessitatibus doloremque maxime ex sit quidem
+              molestias veritatis? Dignissimos!
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="images/slide-3.jpg " class="d-block w-100" alt="slide-3" />
+          <div class="carousel-caption d-block">
+            <h5>Mysterious Island</h5>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
+              laborum ipsum necessitatibus doloremque maxime ex sit quidem
+              molestias veritatis? Dignissimos!
+            </p>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="carousel-control-prev" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden"></span></button><button type="button" class="carousel-control-next"
+        data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Home Section -->
+  <section class="section py-3">
+    <div class="mobile-section d-block d-sm-none px-3 mb-5">
+      <p class="text-center px-1">
+        <span style="font-weight: bold; font-size: 30px; color: #ed213a">PRACTICE</span>
+        <span style="font-size: 30px; font-weight: lighter; color: #da2451d7">GO</span>
+        <span><br />
+          Let's Practice Together<br />
+          <br />
+          We are a practice platform which will help you to become one of the
+          rare people who don't know how to quit.
+        </span>
+      </p>
+      <div class="course-demo d-flex justify-content-center my-2">
+        <button class="btn btn-primary btn-sm p-2">Corporate</button>
+        <button class="btn btn-primary btn-sm mx-2 p-2">Banking</button>
+        <button class="btn btn-primary btn-sm p-2">Government</button>
+      </div>
+      <p class="text-center">
+        Practice Tests | Old Question Papers | Online Mock Tests | Study
+        Materials
+      </p>
+    </div>
+
+    <div class="container">
+      <!-- <h3 class=" text-info py-4" id="large-screen">PracticeGO</h3> -->
+      <div class="row">
+        <div class="col-md-8 d-flex align-items-center">
+          <div class="col px-2 px-sm-0">
+            <p>
+              PracticeGO is a cloud based online testing and practice platform
+              that is convenient, secure and reliable with real-time
+              reporting.This is only designed for the aspirants who is
+              preparing any kind of exam whether it is competative or class
+              standards examination, it is going to be very helpful for
+              him/her. Students can test themselve and see the result in no
+              time. The back-end-part is take care by us.
+            </p>
+            <p class="text-center" id="sucess-formula" style="font-weight: bold; font-size: 25px; margin-top: 20px">
+              Sucess=Practice + Consistence
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center">
+          <img id="examPrpe-home-image" src="images/ExamPrep.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-dark text-white">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias eligendi
+    fuga quibusdam vero ipsa odit animi, ipsum temporibus minus nostrum
+    dolorem, nulla nobis tempora numquam neque repellendus saepe earum veniam
+    pariatur non ex distinctio perspiciatis corrupti sapiente! Obcaecati
+    repellendus consequuntur accusantium nemo numquam? Ducimus ipsa
+    necessitatibus rerum labore, accusantium suscipit.
+  </section>
+
+  <!-- Our Features Sections if there is -->
+  <section class="section our-features my-2" id="feature-section">
+    <h3 class="text-center text-primary py-4">Our Features</h3>
+    <div class="container">
+      <div class="row">
+        <!-- 1st section -->
+        <div class="col-md-6 mb-md-4">
+          <div class="col d-flex align-items-start">
+            <img src="images/exam-info.png" width="30px" height="30px" class="me-1" />
+            <div>
+              <h4 class="mb-1">Question Bank</h4>
+              <p>
+                All kinds of questions accumulated from different sources are
+                provided. Question Types such as MCQs, MSQs, NAT and Paragraph
+                questions can also be added and edited as per user’s choice.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2nd section -->
+        <div class="col-md-6">
+          <div class="col d-flex align-items-start">
+            <img src="images/old-question-paper-big.png" width="30px" height="30px" class="me-1" />
+            <div>
+              <h4 class="mb-1">Old Question Papers</h4>
+              <p>
+                Previous question papers given in various competitive exams
+                over the past years are displayed along with solutions for all
+                questions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3rd section -->
+        <div class="col-md-6">
+          <div class="col d-flex align-items-start">
+            <img src="images/study-material.png" width="30px" height="30px" class="me-1" />
+            <div>
+              <h4 class="mb-1">Study Materials</h4>
+              <p>
+                Students can access wide range of subject and topic wise
+                ‘class notes’ in the form of PDFs and Video links for
+                references.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 4th section -->
+
+        <div class="col-md-6 mb-md-4">
+          <div class="col d-flex align-items-start">
+            <img src="images/practice-test.png" width="30px" height="30px" class="me-1" />
+            <div>
+              <h4 class="mb-1">Computer Based Test</h4>
+              <p>
+                Students can create customized practice tests for individual
+                subjects, topics and full tests to gain thorough knowledge on
+                their interested exams
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="col d-flex align-items-start">
+            <img src="images/checklists.png" width="30px" height="30px" class="me-1" />
+            <div>
+              <h4 class="mb-1">Exam Information</h4>
+              <p>
+                A comprehensive information is provided on test
+                subjects/topics with data on tests attempted and their
+                respective obtained scores.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="col d-flex align-items-start">
+            <img src="images/in-time-analysis-big.png" width="30px" height="30px" class="me-1" />
+            <div>
+              <h4 class="mb-1">In Time Analysis</h4>
+              <p>
+                Students can access wide range of subject and topic wise
+                ‘class notes’ in the form of PDFs and Video links for
+                references.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section class="section" id="contact-section" style="background-color: lightgrey">
+    <div class="container">
+      <h3 class="text-primary">Get in Touch</h3>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <address>
+            <strong>Boudh</strong>
+            <p>
+              Flat No: 302,Tulasi Pur , Boudh, (Near Meta Branch)
+              Odisha-762014, India.
+            </p>
+            <p>Phone- +91 7751928651</p>
+            <p>Email: contact.boudh@practicego.com</p>
+          </address>
+        </div>
+        <div class="col-sm-4">
+          <strong>Bhubaneswar</strong>
+          <p>
+            K-8-601 Kaliga Nagar, New Tech
+            Society,Bbubaneswar,Odisha-700121,India
+          </p>
+          <p>Phone- +91 9937545583</p>
+          <p>Email: contact.bbsr@practicego.com</p>
+        </div>
+        <div class="col-sm-4 d-flex align-items-center justify-content-around">
+          <ul class="list-inline">
+            <li class="list-inline-item">Whatsapp</li>
+            <li class="list-inline-item">Instagram</li>
+            <li class="list-inline-item">Facebook</li>
+            <li class="list-inline-item">Twitter</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="footer text-center py-3">
+    &copy; All rights are reserved to PracticeGO 2024
+  </footer>
+</body>
+
+</html>

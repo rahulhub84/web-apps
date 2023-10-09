@@ -1,0 +1,90 @@
+/* Designing the stylesheets of the page */
+
+/* Global Sets */
+* {
+  padding: 0px;
+}
+#logo{
+  color: #fff;
+  font-family: monospace;
+  font-size: 25px;
+}
+h4 {
+  color: #616368;
+  margin-bottom: 30px !important;
+}
+
+p {
+  margin: 0 0 10px;
+}
+img {
+  margin-top: 2px;
+}
+header nav {
+  box-shadow: 0px 1px 5px 1px rgb(255, 255, 255);
+}
+#navbarToCollapse a {
+  color: rgb(64, 65, 66);
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+#navbarToCollapse ul li {
+  margin-right: 10px;
+}
+#navbarToCollapse ul li a {
+  color: #fff;
+}
+
+#notification-alert {
+  background-color: rgb(70, 68, 68);
+  color: #e2e2e4;
+  padding: 4px;
+}
+
+#sucess-formula{
+  color: #FFC107;
+}
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+  #navbarToCollapse a {
+    border-radius: 0;
+    color: white;
+  }
+  #navbarToCollapse a:hover {
+    background-color: transparent;
+    color: #d65454;
+  }
+
+  h4 {
+    font-size: 17px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 12px;
+    font-family: Lato, sans-serif;
+    color: #212121;
+    line-height: 25px;
+  }
+  #large-screen {
+    display: none;
+  }
+  #examPrpe-home-image {
+    width: 150px;
+    height: 140px;
+  }
+  img {
+    width: 20px;
+    height: 20px;
+  }
+  #sucess-formula{
+    font-size: 16px !important;
+  }
+  #banner-section{
+    display: none;
+  }
+}
